@@ -1,0 +1,8 @@
+.mydivs{
+    padding: 5px;
+    background-color:rgb(243, 151, 151);
+    border: 2px solid rgb(224, 89, 89);
+    
+    font-size: 14px;
+    font: weight 600;;
+}

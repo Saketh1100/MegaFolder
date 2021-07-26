@@ -1,0 +1,4 @@
+<div *ngFor="let items of item,index as i" id="ptag">
+  <div id="tags">{{items}}</div>
+  <button (click)="ondelete(i)">Delete</button>
+</div>

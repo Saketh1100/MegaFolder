@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- TAKING INPUTS FROM USER
+
+    <input id="text1" placeholder="Enter Anything">
+    <br>
+    <input type="password"  id="text2" placeholder="Password">
+    
+    <button id="btn1" onclick="valid()">Click Me </button> -->
+   <!-- 
+    <script>
+        
+        function valid()
+        {
+            let str1=document.getElementById("text1").value;
+            let  str2=document.getElementById("text2").value;
+            if(str1==str2)
+            {
+                alert("they are same");
+            }
+            else{
+                alert("they are not same");
+            }
+        }
+        
+    </script> -->
+    
+    <!-- TAKING INPUTS FROM RADIO BUTTONS -->
+
+    <!-- using same name for both tags means you can on select only one -->
+    <!-- <input name="grp1" id="bt1" value="saketh" type="radio" >saketh</input>
+    <br>
+    <input name="grp1" id="bt2" value="tekumal" type="radio">tekumal</input>
+    <button id="btn1" onclick="f1()">Click Me</button>
+    <script>
+        function f1() {
+            // .checked will check whether the radio is selected or not
+            if(document.getElementById("bt1").checked==true)
+            {
+                alert("Saketh is selected");
+            }
+            else if(document.getElementById("bt2").checked==true)
+            {
+                alert("Tekumal is selected");
+            }
+            else{
+                alert("Nothing is selected");
+            }
+        }
+    </script> -->
+
+    <!-- TAKING INPUT FROM SELECTION BOX i.e dropdown box
+
+    select tag will create a dropdown option tag will give options  -->
+    <!-- <select id="selectBox">
+        <option name="grp1" id="id1" value="saketh">Saketh</option>
+        <option name="grp1" id="id2" value="sai">Sai</option>
+        <option name="grp1" id="id3" value="tekumal">Tekumal</option>
+    </select>
+    <button id="btn1" onclick="f1()">ClickMe</button>
+    <script>
+        function f1() {
+            var select =document.getElementById("selectBox");
+            // this select refers to the select tag
+            alert(select.options[select.selectedIndex].value)
+            // basically options method contain our options as array but we don't know the index of our option it changes according to user
+            // so we use select.selectedIndex
+
+        }
+    </script> -->
+
+</body>
+</html>

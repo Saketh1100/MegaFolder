@@ -1,0 +1,131 @@
+.myrows{
+  border: 2px solid red;
+  padding: 5px;;
+}
+.mycols {
+border: 1px solid yellow;
+}
+#topHeader{
+  background-color: #ebe8e3
+  border-bottom: 1px solid silver;
+  padding: 10px;
+  text-align: right;
+}
+#topHeader a{
+  color: #34495e;
+  font-weight: 600;
+  font-size: 0.89rem;
+  
+}
+.container-fluid{
+  padding-left:0;
+  padding-right:0;
+
+}
+#navbarId{
+  background-color:#182C61;
+  width:100%;
+  
+}
+#listId a{
+  color:white;
+  text-align: center;
+}
+.fa-caret-square-down{
+  color: whitesmoke;
+}
+#divId1 a{
+  color: black;
+}
+nav ul li a{
+  opacity: 0.8;
+  font-weight: 600;
+}
+nav ul li a:hover{
+  opacity: 1;
+  
+}
+.fullfooter{
+  padding-top:10px;
+  background-color:#475f88;
+  
+}
+.div1 a{
+  color: white;
+  opacity: 1;
+  text-decoration: none;
+}
+.div1 a:hover{
+  color: white;
+  opacity: 0.8;
+  text-decoration: underline;
+}
+.top-footer{
+  color: white;
+ 
+}
+
+.brand{
+  font-weight: 700;
+  text-decoration: underline;
+}
+#bottomfooter{
+  color: white;
+  font-weight: 600px;
+  background-color:#2e4072;
+  text-align: center;
+  
+  
+}
+.navdiv{
+  background-color: #182C61;
+  
+}
+.footerpara{
+  padding-top:15px;
+}
+.nav-item:active{
+  opacity: 1;
+  font-weight: 700;
+}
+/* start of home page */
+
+/*start of 1st hero section*/
+.section1{
+  background-color: #ebe8e3;
+  color: #2e2c81;
+  width: 100%;
+}
+.homepagelink{
+  opacity: 0.8;
+}
+.homepagelink:hover{
+  opacity: 1;
+  text-decoration: underline;
+}
+#btnhomepage:hover {
+  background-color: #7d8cb4;
+}
+/*end of 1st hero section*/
+
+/*start of 2nd hero section*/
+#requirementsId
+{
+  background-color:#182C61;
+  color: whitesmoke;
+  font-weight: 600;
+}
+#btnhomepage2:hover{
+  background-color:#7d8cb4;
+}
+#newletterdiv{
+   width: 100%;
+}
+.emailbox{
+  border-radius: 15px;
+}
+#subscribebtn{
+  border-radius: 10px;
+}
+/*end of 2nd hero section*/
+/* End of home page */

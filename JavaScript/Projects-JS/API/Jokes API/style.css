@@ -1,0 +1,30 @@
+#movie
+{
+  width: auto;
+  text-align: center;
+  font-weight: 700;
+  flex: right;
+}
+#question
+{
+  margin: 50px;
+  font-size: 30px;
+  font-weight: 500;
+}
+#answer
+{
+  margin-top: 20px;
+  margin-left: 50px;
+  font-size: 30px;
+  font-weight: 500;
+}
+#box
+{
+  background-color: rgb(209, 208, 208);
+  width: auto;
+}
+#newQ
+{
+  margin-top: 50px ;
+  margin-left: 50px;
+}

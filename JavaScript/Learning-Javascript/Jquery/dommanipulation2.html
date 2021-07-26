@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     *** MOBILE VALIDATION ***
+    <form>
+        <input id="in1" placeholder="Mobile Number">
+        <label  id="label" style="color: red;visibility:hidden ;"></label>
+        
+        <br>
+        <button type="button" id="btn1" onclick="f1()">Click Me</button>
+    </form>
+    <script>
+        function f1(){
+            var regx=/^[7-9]\d{9}$/;
+            //^ helps in denoting starting of string and $ for end of string {}used to repeat same thing for multiple times
+            
+            var str=document.getElementById("in1").value;
+            if(regx.test(str))
+            {
+                var str=document.getElementById("label");
+                str.style.visibility="visible";
+                str.innerHTML="Valid"
+            }
+            else{
+                var str=document.getElementById("label");
+                str.style.visibility="visible"
+                str.innerHTML="Invalid"
+            }
+        }
+    </script> 
+
+     *** EMAIL VALIDATION ***
+
+    email validation is same as mobile number validation except var regx;
+
+    var regx=// 
+    
+    -->
+
+     *** FADEIN FADEOUT *** -->
+
+     <script>
+        
+        function f1() {
+            
+           // let str=document.getElementById("text").style.opacity;
+           var str=Number(window.getComputedStyle(text).getPropertyValue("opacity"));
+
+           //to get value of a tag i.e like opacity or color we need to use
+           //window.getComputedStyle(mention id of element).getPropertyValue(which property we nee value for i.e opacity)
+            
+            if(str>0)
+            {
+                
+               str=str-0.1;
+               document.getElementById("text").style.opacity=str; 
+            }
+            else{
+                clearInterval(s);
+            }
+            
+        }
+        function f2() {
+            var str=Number(window.getComputedStyle(text).getPropertyValue("opacity"));
+
+            //to get value of a tag i.e like opacity or color we need to use
+            //window.getComputedStyle(mention id of element).getPropertyValue(which property we nee value for i.e
+            //opacity
+
+            if(str<1)
+            {
+
+            str=str+0.1;
+            document.getElementById("text").style.opacity=str;
+            }
+            else{
+            clearInterval(s);
+            }
+            
+        }
+        function fadeout() {
+            
+          s=setInterval(f1,20);//repeats the function f1 after 200ms which makes the opacity decrease smootly
+
+            
+        }
+        function fadeIn(){
+            s=setInterval(f2,20);
+        }
+    </script>
+
+    <button id="fadeout" type="button" onclick="fadeout()">FadeOut</button>
+    <p id="text">SAKETH</p>
+    <button id="fadein" type="button" onclick="fadeIn()">FadeIn</button> -->
+
+    
+</body>
+
+</html>

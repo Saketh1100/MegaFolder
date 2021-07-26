@@ -1,0 +1,18 @@
+<!-- <app-notes></app-notes> -->
+
+<div style="text-align: center;">
+  <button id="newnote" class="smbtn" (click)="onclick()">New Note</button>
+  <div *ngIf="valid">
+    <form>
+    <textarea id="input" type="text" [(ngModel)]="value" name="djbfkbf" ></textarea>
+    </form>
+    <button id="newinput" class="smbtn" (click)="onsave()">Save</button>
+  </div>
+</div>
+<app-notes [item]="arr"></app-notes>
+
+
+
+
+
+<router-outlet></router-outlet>

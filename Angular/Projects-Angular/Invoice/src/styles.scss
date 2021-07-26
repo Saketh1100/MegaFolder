@@ -1,0 +1,19 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* You can add global styles to this file, and also import other style files */
+* {
+  font-family: 'Poppins', sans-serif;
+
+}
+
+@layer base {
+  :root {
+    --color-text-base: #0012f3;
+    --color-text-muted: #c7d2fe;
+    --color-text-inverted: #4f46e5;
+    --color-fill: #232441;
+
+  }
+}

@@ -1,0 +1,15 @@
+<h1 *ngIf="valid">{{data.length}}<span> Birthdays today</span></h1>
+<h1 *ngIf="!valid">{{0}}<span> Birthdays today</span></h1>
+<div class="whole" >
+
+
+<button (click)="onrefresh()" *ngIf="!valid">Refresh</button>
+<div *ngIf="valid" id="data">
+  <div *ngFor="let datas of data" class="ele">
+    <h3 style="margin-right: 10px;">{{datas?.name}}</h3>
+    <div id="years">{{datas?.age}}<span> years</span></div>
+  </div>
+  <button (click)="onclick()">Clear</button>
+</div>
+</div>
+

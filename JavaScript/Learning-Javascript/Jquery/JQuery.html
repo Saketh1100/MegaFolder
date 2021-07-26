@@ -1,0 +1,128 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="Jquery.css" rel="stylesheet">
+    <link href="JQueryUI/jquery-ui.css " rel="stylesheet">
+    <link href="JQueryUI/jquery-ui.structure.css" rel="stylesheet">
+    <link href="JQueryUI/jquery-ui.theme.css" rel="stylesheet">
+    <!-- ui.min.css will have small size compared to ui.css usefull when we go live -->
+</head>
+<body>
+    <!--DATEPICKER-->
+    <div id="mydiv" >
+        <input id="dateinput" type="text" placeholder="Click to Select Date">
+   </div> -->
+
+   <!--ACCORDION-->
+   <h2>Accordion Example</h2>
+   <div id="panels">
+       <h1>Telsuko</h1>
+       <p>TELUSKO is one of thr largest tech educational youtube channels in India</p>
+
+       <h1>Telsuko</h1>
+       <p>TELUSKO is one of thr largest tech educational youtube channels in India</p>
+
+       <h1>Telsuko</h1>
+       <p>TELUSKO is one of thr largest tech educational youtube channels in India</p>
+   </div> 
+
+   <!--MESSAGE BOX-->
+
+    <div id="div1" class="mydivs">
+       <h2>This is a MessageBox Widget</h2>
+       <button id="btn1">Click Me</button>
+   </div>
+   <div id="messagebox" class="mydivs">
+       <p>this is the message box</p>
+       <h3>Here we are</h3>
+       <button id="btn2">click me</button>
+   </div> 
+
+   <!--AutoComplete Widget-->
+
+   <div id="mydivs">
+       <label><b>Enter your favorite city</b></label>
+       <input type="text" id="citytextbox" name="">
+   </div>
+
+
+
+
+</body>
+<script src="JQuery.js"></script>
+<script src="JQueryUI/jquery-ui.js"></script>
+
+<script>
+    ///*** DATEPICKER ***///
+
+    $("#dateinput").datepicker({
+        numberOfMonths:1,
+        changeYear:true,
+        changeMonth:true,
+        showOtherMonths:true,
+        minDate:new Date(2017,0,1),
+        maxDate:new Date(2022,0,1),
+    });
+    //as we added datepicker to the input tag onclick it appers and on selcting date it gives as input
+    
+    ///***ACCORDION***//
+   $("#panels").accordion({
+        collapsible:true,//collapses the section on click or hover
+        event:"mouseover",//event changing from click to mouseover
+        animate:300,//time duration of animation in ms
+        active:false,//active text on opening website it can be 0 1 2 (indexes) or we can make it false
+        heightStyle:true//makes height flexible for each tab
+        icons:{header:"ui-icon-plus",activeHeader:"ui-icon-minus"}//to change the symbol of the icon
+    });
+
+    //Message Box//
+
+    $("#btn1").click(function()
+    {
+        $("#messagebox").dialog({
+            title:"Custom MessageBox",
+            draggable:false,
+            resizable:false,//make it true if you want resizable
+            modal:true,
+            buttons:[//to add buttons on messagebox a complex one
+            {
+                text:"close",
+                click:function()
+                {
+                    $(this).dialog("close");
+                }
+            },
+            {
+                text:"ok",
+                click:function()
+                {
+                $(this).dialog("close");
+                }
+            }
+        ]
+             
+
+        });//this dialog makes the selected part in to a messagebox
+    })
+
+    //Autocomplete Widget in Jquery UI //
+
+    var arr=["delhi","hyderabad","mumbai","mana","tokyo"];
+    $("#citybox").autocomplete({//this can take two {} arguments
+        source:arr,
+
+    },{
+        autofocus:false,
+        delay:0,
+        minlength:2,//suggestions come after min length only,
+
+    });// we have to pass array of all the suggestions
+
+
+
+</script>
+
+<!-- NOTE: ALWAYS ADD JQUERY BEFORE JQUERYUI BECAUSE ITS UI IS BUILD ON JQUERY; -->
+</html>

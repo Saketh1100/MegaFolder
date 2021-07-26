@@ -1,0 +1,38 @@
+*
+{
+  color: white;
+}
+#tags
+{
+  width: 500px;
+  height: auto;
+  min-height: 40px;
+  max-height: 200px;
+  overflow-y: auto;
+  background-color: white;
+  border: 3px solid grey;
+  text-align: center;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  padding: 5px;
+  
+}
+#ptag
+{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;;
+}
+button
+{
+  
+  height: 30px;
+  position: relative;
+  top: 20px;
+  font-size: 14px;
+  border: 1px solid grey;
+}

@@ -1,0 +1,37 @@
+.ele
+{
+  display: flex;
+  
+  flex-flow: row wrap;
+  align-content: space-between;
+  justify-content: space-between;
+  margin: 15px;
+}
+
+#years
+{
+  position: relative;
+  top:22px;
+}
+h1{
+  text-align: center;
+}
+button
+{
+  color:black;
+  margin-bottom: 20px;
+  width: 100px;
+  height: 30px;
+  align-items: flex-start;
+  font-weight: 900;
+  font-size: 16px;
+
+}
+.whole
+{
+    
+    position:absolute;
+    left: 42%;
+    
+
+}
